@@ -1,0 +1,251 @@
+/* Szolgáltatások szekció */
+.services {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #40015b, #2c003e);
+    color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    perspective: 1000px; /* 3D hatás */
+}
+
+.card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    border: 2px solid #ff00ff;
+    border-radius: 10px;
+    overflow: hidden;
+    transform-style: preserve-3d; /* 3D effekt */
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: rotateY(15deg) translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 105, 180, 0.8);
+}
+
+.card .content {
+    padding: 20px;
+    text-align: center;
+    transform: translateZ(50px); /* Mélységi hatás */
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    color: #ff00ff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #ff69b4;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Hover animáció */
+.card:hover .content {
+    transform: translateZ(70px); /* Kiemelés hoverre */
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #2c003e, #8a2387);
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    background: #8a2387;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1.neon-text {
+    font-size: 3rem;
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff69b4; /* Finomabb árnyék */
+    font-weight: 400; /* Vékonyabb betűk */
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ff00ff;
+    color: #fff;
+}
+
+footer {
+    background: #40015b;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.intro, .pricing {
+    padding: 20px;
+}
+
+.intro h2, .pricing h2 {
+    font-size: 2rem;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+}
+/* Események szekció */
+.events {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #2c003e, #40015b);
+    color: #fff;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+}
+
+/* Idővonal stílus */
+.timeline {
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 80%;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.timeline-date {
+    flex: 1;
+    text-align: right;
+    font-size: 1.5rem;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff69b4;
+}
+
+.timeline-content {
+    flex: 3;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid #ff00ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.timeline-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff69b4;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Hover effekt az esemény kártyákra */
+.timeline-content:hover {
+    transform: scale(1.05);
+    background: rgba(255, 0, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.8);
+}
+/* Galéria szekció */
+.gallery {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #2c003e, #40015b);
+    color: #fff;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+}
+
+/* Galéria grid elrendezés */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+}
+
+/* Hover effekt a képekre */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.8);
+}
+
+/* Overlay effekt */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
